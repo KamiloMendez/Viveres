@@ -3,48 +3,61 @@
 
 <head>
     <meta charset="UTF-8" >
+<meta name="viewport" content="width=device-Width,User-scalable=no,initial-scale=1.0,maximun-scale=1.0,minimun-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css" >
+	<link rel="stylesheet" href="css/bootstrap.css" >
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
 <script src="js/bootstrap.min.js" ></script>
 <script src="js/jquery.js" ></script>
 <script src="js/carrito.js" ></script>
 <script src="js/ventana.js" ></script>
+<script src="js/deslizante.js" ></script>
+
 	<title>Variedades Nevis</title>
 </head>
 
 <body >
 
 	<header align="center">
-         <img src="img/titulo.png">
+	<br><br>
+         <img src="img/titulo.png" class="tit">
+         <div id ="desliza "
+          class="desliza">
+          
+          <div  class="col-sm-4">
+                <h2>Carrito</h2>
+                <!-- Elementos del carrito -->
+                <ul id="carrito" class="list-group"></ul>
+                <hr>
+                <!-- Precio total -->
+                <p class="text-right">Total:$ <span id="total"></span></p>
+            
+        </div>
+    </div>
+         </header>
+         <div id="cuerpo">
+         
+         <div class="menu_bar">
+         <a href="#" id="bp"><img src="img/menu.png" id ="imgg" width="45" height="45">Menu</a>
+
+         </div>
+         
 		<nav>
 		
 			<ul id="lmu">
-                <li class="lm"><a href="index.html"> inicio</a></li>
+                <li class="lm"><a href="index.html"><img src="img/home.png" width="45" height="45"class="icon"></a></li>
                 <li class="lm"><a href="viveres.html">viveres y abarrotes</a></li>
                 <li class="lm"><a href="aseo.html">Aseo Personal</a></li>
                 <li class="lm"><a href="productos.html"> Productos de Limpieza </a></li>
-
+ <li class="lm" ><a href="#" id="des"><img src="img/shop.png"  width="45" height="45"><br> carrito</a></li>
               </ul>
 			  
 			 
-			 <button type="button" id="us"  class="btn btn-primary" onclick="abrir();"><input type=image src="img/user.png" width="45" height="45"><br> usuario</button>
-			<button type="button" id="us2"  class="btn btn-primary"><input type=image src="img/shop.png" width="45" height="45"><br> carrito</button>
-		
+			 
 		</nav>
-	</header>
-<div id="cuerpo">
-	<div id="log">
-		        <div id="cerrar"> <a href="javascript:cerrar()"><img src="img/cancel.png"></a>  </div>
-<figure><img src="img/usu.png"width="100" height="100" style="float:top"></figure>
-<input type = "text" id = "usu" placeholder=" Username" ><br><br>
- <input type = "password" id = "pass" placeholder="Password"><br><br>
-
-
-
-<button onclick= "entrar(); "type="button" class="btn btn-info"> Entrar </button><br>
-<button type="button" class="btn btn-link">¿Olvidastes tu contraseña?</button>
-</div><br><br><br>
-	
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -53,13 +66,16 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="img/slaider-mercado.jpg" class="d-block w-100" height="400" alt="...">
+      <img src="img/slider1.png" class="d-block w-100" id="sl1" height="400"alt="...">
     </div>
     <div class="carousel-item">
-      <img src="img/slaider-mercado.jpg" class="d-block w-100" alt="...">
+      <img src="img/noel.jpg" class="d-block w-100"id="sl2" height="400"alt="...">
     </div>
-    <div class="img/slaider-mercado.jpg">
-      <img src="..." class="d-block w-100" alt="...">
+    <div class="carousel-item">
+      <img src="img/super.jpg" class="d-block w-100" id="sl3" height="400" alt="...">
+    </div>
+	<div class="carousel-item">
+      <img src="img/slide-2.jpg" class="d-block w-100" id="sl3" height="400" alt="...">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -70,7 +86,11 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-</div>
+</div>   
+
+<br><br><br>
+
+
  <div class="container" id="conta">
         <div class="row">
             <!-- Elementos generados a partir del JSON -->
@@ -83,7 +103,7 @@
                 <ul id="carrito" class="list-group"></ul>
                 <hr>
                 <!-- Precio total -->
-                <p class="text-right">Total: <span id="total"></span>&euro;</p>
+                <p class="text-right">Total: <span id="total"></span>&peso;</p>
             
         </div>
     </div>
