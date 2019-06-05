@@ -4,35 +4,31 @@
                 {
                     id: 1,
                     nombre: 'Patata',
-                    precio: 1
+                    precio: 1000
                 },
                 {
                     id: 2,
                     nombre: 'Cebolla',
-                    precio: 1.2
+                    precio: 800
                 },
                 {
                     id: 3,
                     nombre: 'Calabacin',
-                    precio: 2.1
+                    precio: 1500
                 },
 				{
                     id: 4,
-                    nombre: 'Patata',
-                    precio: 1
+                    nombre: 'Papa',
+                    precio: 1600
                 },
                 {
                     id: 5,
                     nombre: 'Cebolla',
                     precio: 1.2
                 },
+                
                 {
                     id: 6,
-                    nombre: 'Calabacin',
-                    precio: 2.1
-                },
-                {
-                    id: 7,
                     nombre: 'Fresas',
                     precio: 0.6
                 }
@@ -59,7 +55,7 @@
                     // Precio
                     let miNodoPrecio = document.createElement('p');
                     miNodoPrecio.classList.add('card-text');
-                    miNodoPrecio.textContent = info['precio'] + '€';
+                    miNodoPrecio.textContent = info['precio'];
                     // Boton 
                     let miNodoBoton = document.createElement('button');
                     miNodoBoton.classList.add('btn', 'btn-success');
