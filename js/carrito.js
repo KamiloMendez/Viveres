@@ -24,13 +24,45 @@
                 {
                     id: 5,
                     nombre: 'Cebolla',
-                    precio: 1.2
+                    precio: 1000
                 },
                 
                 {
                     id: 6,
-                    nombre: 'Fresas',
-                    precio: 0.6
+                    nombre: 'Guayaba',
+                    precio: 1800
+                },
+                {
+                    id: 7,
+                    nombre: 'zanahoria',
+                    precio: 900
+                },
+				{
+                    id: 8,
+                    nombre: 'piña',
+                    precio: 2000
+                },
+                {
+                    id: 9,
+                    nombre: 'Ñame',
+                    precio: 1600
+                },
+                
+                {
+                    id: 10,
+                    nombre: 'ajo',
+                    precio: 500
+                }
+		    ,
+				{
+                    id: 11,
+                    nombre: 'tomate de arbol',
+                    precio: 400
+                },
+                {
+                    id: 12,
+                    nombre: 'huevos',
+                    precio: 400
                 }
 
             ]
