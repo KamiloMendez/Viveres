@@ -16,8 +16,23 @@
                     nombre: 'Calabacin',
                     precio: 2.1
                 },
-                {
+				{
                     id: 4,
+                    nombre: 'Patata',
+                    precio: 1
+                },
+                {
+                    id: 5,
+                    nombre: 'Cebolla',
+                    precio: 1.2
+                },
+                {
+                    id: 6,
+                    nombre: 'Calabacin',
+                    precio: 2.1
+                },
+                {
+                    id: 7,
                     nombre: 'Fresas',
                     precio: 0.6
                 }
@@ -47,8 +62,8 @@
                     miNodoPrecio.textContent = info['precio'] + '€';
                     // Boton 
                     let miNodoBoton = document.createElement('button');
-                    miNodoBoton.classList.add('btn', 'btn-primary');
-                    miNodoBoton.textContent = '+';
+                    miNodoBoton.classList.add('btn', 'btn-success');
+                    miNodoBoton.textContent = 'comprar';
                     miNodoBoton.setAttribute('marcador', info['id']);
                     miNodoBoton.addEventListener('click', anyadirCarrito);
                     // Insertamos
