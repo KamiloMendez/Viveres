@@ -5,86 +5,433 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css" >
+	<link rel="stylesheet" href="css/bootstrap.css" >
+<script src="js/bootstrap.min.js" ></script>
+<script src="js/jquery.js" ></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/carrito.js"></script>
+<script src="js/ventana.js" ></script>
+<script src="js/deslizante.js" ></script>
 	<title>Variedades Nevis</title>
 </head>
 
-<body background="img/fd.jpg">
+<body >
 
-	<header>
-    <center>
-		<header align="center">
-         <img src="img/vi.png">
+		<header align="center" >
+		   <br><br>
+         <img src="img/vi.png" class="tit">
+         <div id ="desliza "
+          class="desliza">
+          
+          <div  class="col-sm-4">
+                <h2>Carrito</h2>
+                <!-- Elementos del carrito -->
+                <ul id="carrito" class="list-group"></ul>
+                <hr>
+                <!-- Precio total -->
+                <p class="text-right">Total: <span id="total"></span>&euro;</p>
+            
+        </div>
+    </div>
+         </header>
+         <div id="cuerpo">
+         
+         <div class="menu_bar">
+         <a href="#" id="bp"><img src="img/menu.png" id ="imgg" width="45" height="45">Menu</a>
+
+         </div>
+         
 		<nav>
+		
 			<ul id="lmu">
-                <li class="lm"><a href="index.html"> inicio</a></li>
+                <li class="lm"><a href="index.html"><img src="img/home.png" width="45" height="45"class="icon"></a></li>
                 <li class="lm"><a href="viveres.html">viveres y abarrotes</a></li>
                 <li class="lm"><a href="aseo.html">Aseo Personal</a></li>
-                <li class="lm"><a href="productos.html"> Productos de Limpieza </a></li>
-
+<li class="lm"><a href="productos.html"> Productos de Limpieza </a></li>
+ <li class="lm"><a href="#"
+   id="des"><img src="img/shop.png"  width="45" height="45"><br> carrito</a></li>
+ 
               </ul>
 		</nav>
-	</header>
-	
-<div class="card-group">
-  <div class="card">
-    <img src="img/roa.png" class="card-img-top"  alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text"></p>
-      <p class="card-text"><small class="text-muted"></small></p>
-    </div>
-  </div>
-  <div class="card">
-    <img src="img/fideo.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text"></p>
-      <p class="card-text"><small class="text-muted"></p>
-    </div>
-  </div>
-  <div class="card">
-    <img src="img/huevos.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text"></p>
-      <p class="card-text"><small class="text-muted"></small></p>
-    </div>
-  </div>
-</div>
 
+<center>
 <div class="card-group">
+<div class="ani">
   <div class="card">
-    <img src="img/diana.png" class="card-img-top"  alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text"></p>
-      <p class="card-text"><small class="text-muted"></small></p>
+    <h1 class="viv">Fideo Comarrico</h1>
+    <img src="img/fideo.png"  height="250"  width="200" class="imgs" >
+	<h1 class="viv">$1.300/h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
     </div>
   </div>
+  <div class="ani">
   <div class="card">
-    <img src="img/conchas.PNG" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text"></p>
-      <p class="card-text"><small class="text-muted"></p>
+    <h1 class="viv">Arroz Diana</h1>
+    <img src=" img/diana.png" width="200" height="250" class="imgs" >
+	<h1 class="viv">$1.500</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
+	 </div>
+  </div>
+   <div class="ani">
+  <div class="card">
+    <h1 class="viv">Arroz Roa</h1>
+    <img src="img/roa.png"width="200" height="250"  class="imgs">
+    <h1 class="viv">$1.500</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
+	
+    
+  </div>
+  </div>
+  <div class="ani">
+  <div class="card">
+    <h1 class="viv">Conchas</h1>
+    <img src="img/conchas.png"width="200" height="250" class="imgs"  >
+   <h1 class="viv">$1.300</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
+	
+   </div> 
+  </div>
+  
+
+<div class="ani">
+  <div class="card">
+    <h1 class="viv">Harina Pan</h1>
+    <img src="img/PAN.png"  height="250"  width="200" class="imgs" >
+	<h1 class="viv">$3.000</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
     </div>
   </div>
+  <div class="ani">
   <div class="card">
-    <img src="img/lenteja.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text"></p>
-      <p class="card-text"><small class="text-muted"></small></p>
+    <h1 class="viv">Promasa Blanca</h1>
+    <img src=" img/promasa.png" width="200" height="250" class="imgs" >
+	<h1 class="viv">$1.300</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
+	 </div>
+  </div>
+   <div class="ani">
+  <div class="card">
+    <h1 class="viv">Promasa Amarilla</h1>
+    <img src="img/promasab.png"width="200" height="250" class="imgs" >
+    <h1 class="viv">$1.300</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
+	
+    
+  </div>
+  </div>
+  <div class="ani">
+  <div class="card">
+    <h1 class="viv">Sal</h1>
+    <img src="img/sal.png"width="200" height="150"  class="imgs" >
+   <h1 class="viv">$600</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
+	
+   </div> 
+  </div>
+
+<div class="ani">
+  <div class="card">
+    <h1 class="viv">Salsa Tomate</h1>
+    <img src="img/salsaT.png"  height="250"  width="200" class="imgs" >
+	<h1 class="viv">$1.000</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
     </div>
+  </div>
+  <div class="ani">
+  <div class="card">
+    <h1 class="viv">Vinagre Blanco</h1>
+    <img src=" img/vinagre.png" width="200" height="250" class="imgs">
+	<h1 class="viv">$1.500</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
+	 </div>
+  </div>
+   <div class="ani">
+  <div class="card">
+    <h1 class="viv">Pastas Doria</h1>
+    <img src="img/pasta2.png"width="150" height="250" class="imgs" >
+    <h1 class="viv">$800</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
+	
+    
+  </div>
+  </div>
+  <div class="ani">
+  <div class="card">
+    <h1 class="viv">Pastas Comarrico</h1>
+    <img src="img/pastas.png"width="150" height="250"  class="imgs" >
+   <h1 class="viv">$600</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
+	
+   </div> 
+  </div>
+
+<div class="ani">
+  <div class="card">
+    <h1 class="viv">Aceite</h1>
+    <img src="img/aceite.png"  height="250"  width="200" class="imgs" >
+	<h1 class="viv">$4.500</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
+    </div>
+  </div>
+  <div class="ani">
+  <div class="card">
+    <h1 class="viv">Lenteja</h1>
+    <img src=" img/lenteja.png" width="200" height="250" class="imgs">
+	<h1 class="viv">Libra - $2.000</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
+	 </div>
+  </div>
+   <div class="ani">
+  <div class="card">
+    <h1 class="viv">Chocolate Corona</h1>
+    <img src="img/CCorona.png"width="200" height="150"  class="imgs">
+    <h1 class="viv">$500</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
+	
+    
+  </div>
+  </div>
+  <div class="ani">
+  <div class="card">
+    <h1 class="viv">Frutiño</h1>
+    <img src="img/frutiño2.png"width="200" height="250"  class="imgs" >
+   <h1 class="viv">$700</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
+	
+   </div> 
+  </div>
+
+<div class="ani">
+  <div class="card">
+    <h1 class="viv">Panela</h1>
+    <img src="img/panela.jpg"  height="250"  width="200"  class="imgs">
+	<h1 class="viv">$500</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
+    </div>
+  </div>
+  <div class="ani">
+  <div class="card">
+    <h1 class="viv">Bicarbonato</h1>
+    <img src=" img/birca.png" width="200" height="250" class="imgs">
+	<h1 class="viv">$500</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
+	 </div>
+  </div>
+   <div class="ani">
+  <div class="card">
+    <h1 class="viv">Huevos</h1>
+    <img src="img/huevos.jpg"width="200" height="250"  class="imgs">
+    <h1 class="viv">$400</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
+	
+    
+  </div>
+  </div>
+  <div class="ani">
+  <div class="card">
+    <h1 class="viv">Harina de Trigo</h1>
+    <img src="img/harina.png"width="200" height="250"   class="imgs">
+   <h1 class="viv">$1.000</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
+	
+   </div> 
+  </div>
+
+<div class="ani">
+  <div class="card">
+    <h1 class="viv">Tomate</h1>
+    <img src="img/tomt.png"width="200" height="200"  class="imgs" >
+   <h1 class="viv">Libra -</h1>
+   <button type="button"id="bt" class="btn btn-success">Comprar</button>
+	
+   </div> 
+  </div>
+
+<div class="ani">
+  <div class="card">
+    <h1 class="viv">Papa</h1>
+    <img src="img/papa.png"  height="250"  width="200" class="imgs" >
+	<h1 class="viv">$1.200</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
+    </div>
+  </div>
+  <div class="ani">
+  <div class="card">
+    <h1 class="viv">Cebolla Blanca</h1>
+    <img src=" img/cebollaB.png" width="200" height="200" class="imgs">
+	<h1 class="viv">$1.300</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
+	 </div>
+  </div>
+   <div class="ani">
+  <div class="card">
+    <h1 class="viv">Tomate de Arbol</h1>
+    <img src="img/tomateA.png"width="200" height="250"  class="imgs">
+    <h1 class="viv">$400</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
+	
+    
+  </div>
+  </div>
+  <div class="ani">
+  <div class="card">
+    <h1 class="viv">Repollo</h1>
+    <img src="img/repollo.png"width="200" height="200"  class="imgs" >
+   <h1 class="viv">Libra - $1.200</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
+	
+   </div> 
+  </div>
+
+<div class="ani">
+  <div class="card">
+    <h1 class="viv">Pepino</h1>
+    <img src="img/pepino.png"  height="250"  width="200" class="imgs" >
+	<h1 class="viv">$1.300</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
+    </div>
+  </div>
+  <div class="ani">
+  <div class="card">
+    <h1 class="viv">Guayaba Dulce</h1>
+    <img src=" img/guayaba.png" width="200" height="250" class="imgs">
+	<h1 class="viv">$1.500</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
+	 </div>
+  </div>
+   <div class="ani">
+  <div class="card">
+    <h1 class="viv">Platano</h1>
+    <img src="img/platano.png"width="200" height="250"  class="imgs">
+    <h1 class="viv">$800</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
+	
+    
+  </div>
+  </div>
+  <div class="ani">
+  <div class="card">
+    <h1 class="viv">Zanahoria</h1>
+    <img src="img/zanahoria.png"width="200" height="200"  class="imgs" >
+   <h1 class="viv">Libra - $900</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
+	
+   </div> 
+  </div>
+
+<div class="ani"> 
+  <div class="card">
+    <h1 class="viv">Berenjena</h1>
+    <img src="img/berenjena.png"  height="250"  width="200" class="imgs" >
+	<h1 class="viv">Libra - $1.500</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
+    </div>
+  </div>
+  <div class="ani">
+  <div class="card">
+    <h1 class="viv">Cilantro</h1>
+    <img src=" img/cilantro.png" width="200" height="200" class="imgs">
+	<h1 class="viv">Libra - $2.500</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
+	 </div>
+  </div>
+   <div class="ani">
+  <div class="card">
+    <h1 class="viv">Apio</h1>
+    <img src="img/apio.png"width="200" height="250"  class="imgs">
+    <h1 class="viv">Libra - $1.300</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
+	
+    
+  </div>
+  </div>
+  <div class="ani">
+  <div class="card">
+    <h1 class="viv">Ahuyama</h1>
+    <img src="img/ahuyama.png"width="250" height="200" class="imgs"  >
+   <h1 class="viv">Libra - $600</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
+	
+   </div> 
+  </div>
+
+<div class="ani">
+  <div class="card">
+    <h1 class="viv">Cebolla Roja</h1>
+    <img src="img/cebollaR.png"  height="250"  width="250" class="imgs" >
+	<h1 class="viv">Libra - $2.300</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
+    </div>
+  </div>
+  <div class="ani">
+  <div class="card">
+    <h1 class="viv">Lechuga</h1>
+    <img src=" img/lechuga.png" width="200" height="250" class="imgs">
+	<h1 class="viv">Libra - $1.300</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
+	 </div>
+  </div>
+   <div class="ani">
+  <div class="card">
+    <h1 class="viv">Ajo</h1>
+    <img src="img/ajo.png"width="250" height="250" class="imgs" >
+    <h1 class="viv">Libra - $3.800</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
+	
+    
+  </div>
+  </div>
+  <div class="ani">
+  <div class="card">
+    <h1 class="viv">Piña</h1>
+    <img src="img/piña.png"width="250" height="250"   class="imgs">
+   <h1 class="viv">$2.000</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
+	
+   </div> 
+  </div>
+
+<div class="ani">
+  <div class="card">
+    <h1 class="viv">Ñame</h1>
+    <img src="img/ñame.png"  height="250"  width="200" class="imgs" >
+	<h1 class="viv">Libra - $1.600</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
+    </div>
+  </div>
+  <div class="ani">
+  <div class="card">
+    <h1 class="viv">Cebollin</h1>
+    <img src=" img/cebollin.png" width="250" height="250" class="imgs">
+	<h1 class="viv">Libra - $1.500</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
+	 </div>
+  </div>
+   <div class="ani">
+  <div class="card">
+    <h1 class="viv">Aji</h1>
+    <img src="img/aji.png"width="250" height="250" class="imgs" >
+    <h1 class="viv">Libra - $3.000</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
+	
+    
+  </div>
+  </div>
+  <div class="ani">
+  <div class="card">
+    <h1 class="viv">Pimenton</h1>
+    <img src="img/pimenton.png"width="250" height="250"  class="imgs" >
+   <h1 class="viv">Libra - $1.500</h1>
+	<button type="button"id="bt" class="btn btn-success">Comprar</button>
+	
+   </div> 
   </div>
 </div>
-	
-	
+</div>
 
 	<hr>
 	<footer class="contenido">
-		<center><p class="texto">Copyright 2019 - David moreno - Kamilo Mierda</p></center>
+		<center><p class="texto">Copyright 2019 - David moreno - Kamilo Mendez</p></center>
 	</footer>
 
 </body>
